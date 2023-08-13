@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #111;
+    --blue: #3a80e9;
+    --grey: #888;
+    --darkgrey: #1b1b1b;
+    --green: #61c96f;
+    --red: #f94141;
+}
+
+body{
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    height: 200vh;
+}
+
+/* custom selection when someone select some texts then what will be the background color & text color will be chnaged */
+
+::selection {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* custom scrollbar */
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--black);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 3rem;
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } */
+
+  a{
+    color: white;
+    text-decoration: none !important;
+  }

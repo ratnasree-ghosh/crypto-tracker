@@ -56,3 +56,14 @@ body{
     color: white;
     text-decoration: none !important;
   }
+
+
+
+/* css for disable dragability of images */
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    
+    }

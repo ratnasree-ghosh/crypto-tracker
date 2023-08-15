@@ -8,6 +8,12 @@
 }
 .grid-container:hover{
     border: 2px solid var(--green);
+    transition: all 0.3s;
+}
+
+.grid-red-container:hover{
+    border: 2px solid var(--red);
+    transition: all 0.3s;
 }
 
 
@@ -69,7 +75,77 @@
     
 }
 
-.red-chip{
+.price-chip:hover{
+    color: var(--white);
+    background-color: var(--green);
+    transition: all 0.3s;
+}
+
+
+.red-price-chip{
     border: 2px solid var(--red);
     color: var(--red);
+}
+
+.red-price-chip:hover{
+    color: var(--white);
+    background-color: var(--red);
+    transition: all 0.3s;
+}
+
+.icon-chip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--green);
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-chip:hover{
+    color: var(--white);
+    background-color: var(--green);
+    transition: all 0.3s;
+}
+
+.red-icon-chip{
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.red-icon-chip:hover{
+    color: var(--white);
+    background-color: var(--red);
+    transition: all 0.3s;
+}
+
+.info-container{
+    margin: 1.5rem;
+}
+
+.coin-current-price{
+    font-size: 1.2rem;
+    font-weight: 600; 
+}
+
+.total-volume{
+    color: var(--grey);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0;
+
+    
+}
+
+.market-cap{
+    color: var(--grey);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    
 }

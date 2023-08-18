@@ -67,3 +67,8 @@ body{
     -o-user-drag: none;
     
     }
+
+  .no-coins-found{
+      margin: 1rem auto;
+      color: var(grey);
+    }

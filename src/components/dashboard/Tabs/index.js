@@ -5,7 +5,9 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { createTheme, ThemeProvider } from "@mui/material";
 import Grid from "../Grid";
+import List from "../List";
 import "./style.css";
+
 
 export default function TabsComponent({ coins }) {
   const [value, setValue] = React.useState("grid");
@@ -60,19 +62,20 @@ export default function TabsComponent({ coins }) {
         </TabPanel>
         
         <TabPanel value="list">
-          <div className="list-flex">
+          <table className="list-table">
             {coins.map((coin, i) => {
               return (
                 
-                <div>
-                  <img src={coin.image} alt={coin.name} />
-                  <p key={i}>
+                <div key={i}>
+                  <List coin={coin}/>
+                  {/* <img src={coin.image} alt={coin.name} /> */}
+                  {/* <p key={i}>
                     {i+1}. {coin.name}
-                  </p>
+                  </p> */}
                 </div>
               );
             })}
-          </div>
+          </table>
         </TabPanel>
         
       </TabContext>

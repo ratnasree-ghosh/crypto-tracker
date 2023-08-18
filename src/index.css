@@ -72,3 +72,7 @@ body{
       margin: 1rem auto;
       color: var(grey);
     }
+
+    html{
+      scroll-behavior: smooth;
+    }

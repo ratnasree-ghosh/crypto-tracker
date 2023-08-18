@@ -3,9 +3,9 @@ import "./style.css";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import TrendingDownRoundedIcon from "@mui/icons-material/TrendingDownRounded";
 
-const Grid = ({ coin }) => {
+const Grid = ({ coin, key }) => {
   return (
-    <div className={`grid-container ${coin.price_change_percentage_24h<0 && "grid-red-container"}`}>
+    <div className={`grid-container ${coin.price_change_percentage_24h<0 && "grid-red-container"}`} >
       <div className="info-flex">
         <img src={coin.image} alt={coin.name} className="coin-logo" />
 
